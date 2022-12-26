@@ -38,4 +38,12 @@ public class demo {
     public int hashCode() {
         return Objects.hash(name, age);
     }
+
+    @Override
+    public String toString() {
+        return "demo{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
