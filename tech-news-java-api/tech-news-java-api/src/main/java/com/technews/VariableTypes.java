@@ -6,6 +6,6 @@ public class VariableTypes {
         int age = 2016 + 69;
         double price = 1999.99;
         boolean truth = true;
-        boolean falseness = !truth; 
+        boolean falseness = !truth;
     }
 }
