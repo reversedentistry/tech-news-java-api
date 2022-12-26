@@ -1,5 +1,7 @@
 package com.technews.testModel;
 
+import java.util.Objects;
+
 public class demo {
     private String name;
     private int age;
@@ -22,5 +24,18 @@ public class demo {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        demo demo = (demo) o;
+        return age == demo.age && Objects.equals(name, demo.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
