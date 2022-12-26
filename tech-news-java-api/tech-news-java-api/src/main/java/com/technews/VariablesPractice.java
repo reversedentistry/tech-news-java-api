@@ -8,6 +8,6 @@ public class VariablesPractice {
 
         String demoString = "Demo";
 
-        System.out.println(demoInt + demoString); 
+        System.out.println(demoInt + demoString);
     }
 }
