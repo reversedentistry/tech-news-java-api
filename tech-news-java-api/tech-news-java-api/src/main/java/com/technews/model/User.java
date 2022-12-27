@@ -3,6 +3,7 @@ package com.technews.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -27,6 +28,8 @@ public class User {
     @OneToMany(mappedBy = "userId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments;
 
+    public User() {
+    }
     public User(Integer id, String username, String email, String password) {
         this.id = id;
         this.username = username;
